@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndroidDevloperVK</string>
+    <string name="name">Мехал Михалыч</string>
+    <string name="reting">Рейтинг: </string>
+    <string name="prise">Цена: </string>
+    <string name="profile">Профиль</string>
+    <string name="favorites">Избранное</string>
+    <string name="basket">Корзина</string>
+    <string name="catalog">Каталог</string>
+    <string name="title">Название</string>
+    <string name="description">Описание товара</string>
+    <string name="nameandsername">Имя и фамилия</string>
+</resources>

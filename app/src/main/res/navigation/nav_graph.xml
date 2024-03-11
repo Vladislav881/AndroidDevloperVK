@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/store_catalog_fragment">
+
+    <fragment
+        android:id="@+id/store_catalog_fragment"
+        android:name="com.example.androiddevlopervk.view.fragment.StoreCatalogFragment"
+        android:label="CatalogFragment"
+        tools:layout="@layout/store_catalog_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/product_description_fragment"
+        android:name="com.example.androiddevlopervk.view.fragment.ProductDescriptionFragment"
+        android:label="ProductDescription"
+        tools:layout="@layout/product_description_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/profil_fragment"
+        android:name="com.example.androiddevlopervk.view.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/favorites_fragment"
+        android:name="com.example.androiddevlopervk.view.fragment.FavoritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/favorites_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/basket_fragment"
+        android:name="com.example.androiddevlopervk.view.fragment.BasketFragment"
+        android:label="Basket"
+        tools:layout="@layout/basket_fragment">
+    </fragment>
+
+    <action
+        android:id="@+id/action_to_store_catalog"
+        app:destination="@id/store_catalog_fragment"
+        app:popUpTo="@id/store_catalog_fragment"
+        app:popUpToInclusive="true"/>
+
+    <action
+        android:id="@+id/action_to_profil"
+        app:destination="@id/profil_fragment"
+        app:popUpTo="@id/profil_fragment"
+        app:popUpToInclusive="true"/>
+
+    <action
+        android:id="@+id/action_to_favorites"
+        app:destination="@id/favorites_fragment"
+        app:popUpTo="@id/favorites_fragment"
+        app:popUpToInclusive="true"/>
+
+    <action
+        android:id="@+id/action_to_basket"
+        app:destination="@id/basket_fragment"
+        app:popUpTo="@id/basket_fragment"
+        app:popUpToInclusive="true"/>
+
+    <action
+        android:id="@+id/action_to_product_description"
+        app:destination="@id/product_description_fragment"
+        app:popUpTo="@id/product_description_fragment"
+        app:popUpToInclusive="true"/>
+
+</navigation>
